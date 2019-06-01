@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Metadata</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <article>
+      <section class="container">
+        <header class="jumbotron">
+          <h2>
+            Metadata determiner
+          </h2>
+        </header>
+      </section>
+      <section>
+        <main class="container">
+          choose on the upload option to get the Metadata of the file
+        </main>
+        <form
+          enctype="multipart/form-data"
+          class="form-group container"
+          method="POST"
+          action="api/fileanalyse"
+        >
+          <input
+            type="file"
+            class="form-control btn btn-danger"
+            name="file"
+            id="file"
+          />
+          <button type="submit" class="btn btn-primary form-control">
+            Upload
+          </button>
+        </form>
+      </section>
+    </article>
+
+    <script src="" async defer></script>
+  </body>
+</html>
