@@ -11,6 +11,11 @@ app.get("/", (req, res, next) => {
 });
 
 app.post("/api/fileanalyse", multer().single("file"), (req, res, next) => {
+  if (!req.file) {
+    res.json({
+      error: "please upload a file"
+    });
+  }
   res.json({
     name: req.file.originalname,
     type: req.file.mimetype,
